@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>AR модель станка</title>
+  <!-- Скрипт model-viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    header {
+      padding: 10px;
+    }
+    model-viewer {
+      width: 100vw;
+      height: 80vh;
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>AR модель станка</h2>
+    <p>Поверни телефон горизонтально для удобства. Нажми кнопку AR, чтобы «поставить» станок в комнате.</p>
+  </header>
+
+<model-viewer src="machine2.glb"
+              alt="3D модель станка 2"
+              ar
+              ar-modes="scene-viewer webxr quick-look"
+              camera-controls
+              disable-zoom
+              auto-rotate
+              environment-image="neutral"
+              exposure="1.0">
+</model-viewer>
+
+</body>
+</html>
+
